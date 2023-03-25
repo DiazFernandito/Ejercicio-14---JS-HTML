@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - JS + HTML</title>
+
+    <!-- Función JS para cambiar el contenido de un párrafo
+    En este caso el código JS está dentro del head del documento HTML-->
+    <script>
+        function cambiaParrafo2() {
+            document.getElementById("parrafo2").innerHTML = "Este es el párrafo cambiado !!!" ;
+            return ;
+        }
+    </script>
+</head>
+<body>
+    <!-- JS accediendo al contenido de un elemento HTML -->
+    <h2>AL HACER CLIC EN EL BOTÓN CAMBIA EL TEXTO</h2>
+    <p id="demo">Texto Original</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Texto Cambiado'">Haga Click</button> 
+
+    <!-- JS accediendo al atributo de un elemento HTML -->
+    <h2>Use los botones para Aumentar o disminuir el tamaño del escudo</h2>
+    <img id="imgSanto" src="imagenes/sanmartin.jpg" alt="Escudo de San Martín de Tucumán" style="width:200px" title="Escudo CASM">
+    <button type"button" onclick="document.getElementById('imgSanto').style='width:200px'">Original</button>
+    <button type"button" onclick="document.getElementById('imgSanto').style='width:400px'">Grande</button>
+    <button type"button" onclick="document.getElementById('imgSanto').style='width:100px'">Chico</button>
+
+    <!-- JS: Mostrando un mensaje -->
+    <div>
+        <p id="parrafo">Este es un parrafo de prueba</p>
+        <script>
+            document.getElementById("parrafo").innerHTML = "EL PARRAFO FUE CAMBIADO" ;
+        </script>
+    </div>
+
+    <!-- JS: Usando un script para cambiar el contenido de un parrafo
+    al hacer click sobre un botón -->
+    <div>
+        <p id="parrafo2">
+            Al Hacer click sobre el botón de abajo
+            cambia el contenido de este mensaje.
+            Inténtelo !!!
+        </p>
+        <button type="button" onclick="cambiaParrafo2()">Cambiar párrafo</button>
+    </div>
+
+    <!-- JS: Usando un Script que está dentro un un fichero de comandos JS externos
+    el llamado al script se encuentra e el <body> del documento -->
+    <div>
+        <button type="button" onclick="recuperar()">Recuperar Original</button>
+        <script src="recuperarParrafo2.js"></script> 
+    </div>
+
+    <!-- JS: Concatenando variables -->
+    <div>
+        <p>
+            El resultado de "5" + 2 + 3 es:
+        </p>
+        <p id="resultado"></p>
+        <script>
+            let x = "5" + 2 + 3 ;
+            document.getElementById("resultado").innerHTML = x ;
+        </script>
+    </div>
+    <div>
+        <p>
+            El resultado de 5 + "2" + 3 es:
+        </p>
+        <p id="resultado2"></p>
+        <script>
+            let y = 5 + "2" + 3 ;
+            document.getElementById("resultado2").innerHTML = y ;
+        </script>
+    </div>
+    <div>
+        <p>
+            El resultado de 5 + 2 + "3" es:
+        </p>
+        <p id="resultado3"></p>
+        <script>
+            let z = 5 + 2 + "3" ;
+            document.getElementById("resultado3").innerHTML = z ;
+        </script>
+    </div>
+    <div>
+        <p>
+            Si finaliza en string primero se suman los numéricos
+            y se concatena con el string
+        </p>
+    </div>
+    <!-- Declarando una variable como objeto -->
+    <div>
+        <script>
+            let r = new String() ;
+            let s = new Number() ;
+            let t = new Boolean() ;
+            console.log(r) ;
+            console.log(s) ;
+            console.log(t) ;
+            
+        </script>ript
+    </div>
+    
+</body>
+</html>
