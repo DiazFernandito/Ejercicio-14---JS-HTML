@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando links</title>
+
+    <style>
+        /* Definimos el estilo del texto de un link con fondo naranja, texto en blanco
+        y un padding de 10px para que parezca un botón. Si es un link ya visitado entonces
+        mantiene los mismos atributos. El atributo "text-decoration:none" elimina el subrayado
+        por defecto de los textos del link */
+        a:link, a:visited {
+            background-color: orangered;
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        /* En el caso en que el cursor pase por el link (hover) entonces ponemos color de
+        fondo rojo para que parezca que el "botón simulado" se intensifica*/
+        a:hover {
+            background-color: red;
+            color:white;
+        }
+        /* Atributos para los párrafos*/
+        p {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Haga click en el siguiente botón</p>
+    <a href="http://www.google.com.ar" target="_blank">Ir a google</a>    
+</body>
+</html>

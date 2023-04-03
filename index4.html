@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index 4 - Hipervínculos</title>
+
+    <!-- propiedades para los links <a> -->
+    <style>
+        /* color, fondo y fuente de los textos links */
+        a:link {
+            color:blueviolet;
+            background-color: yellow;
+            font-family: monospace;
+            font-size: 15px;             
+        }
+        /* color, fondo y fuente de los textos de los links visitados
+        similares a los de los links por defecto para que no cambien su
+        apariencia luego de haber sido visitados */
+        a:visited {
+            color:blueviolet;
+            background-color: yellow;
+            font-family: monospace;             
+            font-size: 15px;             
+        }
+        /* color, fondo y fuente de los textos de loslink cuando 
+        el cursor pasa por ellos */
+        a:hover {
+            color:cornflowerblue;
+            background-color: blue;
+            font-family: monospace;
+            font-size: 15px;             
+        }
+    </style>
+</head>
+<body>
+    <p>Los siguientes enlaces externos son Absolutos</p>
+    <p>Si Ud desea puede <a href="http://www.google.com.ar" target="_self">Ir a Google !!!</a> haciendo clic</p>
+    <p>Si Ud desea puede <a href="http://www.google.com.ar" target="_blank">Ir a Google !!!</a> haciendo clic</p>
+    <br>
+    <br>
+    <p>Los siguientes enlaces internos son relativos</p>
+    <p>Haga clic <a href="imagenes/sanmartin.jpg" target="_blank">Aquí</a> para ver el escudo del Santo !!!</p>
+    <br>
+    <br>
+    <p>Haga clic en el escudo del santo para ir al sitio oficial !!</p>
+    <a href="https://clubatleticosanmartin.com.ar/" target="_blank"><img src="imagenes/sanmartin.jpg" alt="Escudo Santo" style="width: 100px;height: 100px;"></a>
+    <br>
+    <br>
+    <button type="button" onclick="document.location='https://clubatleticosanmartin.com.ar/'">Clic para ir a CASM</button>
+
+</body>
+</html>
