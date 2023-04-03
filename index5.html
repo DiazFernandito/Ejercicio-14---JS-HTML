@@ -15,9 +15,10 @@
             background-color: orangered;
             color:white;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
+            font-size: 15px;
             text-decoration: none;
-            padding: 10px;
+            text-align: center;
+            padding: 20px;
         }
         /* En el caso en que el cursor pase por el link (hover) entonces ponemos color de
         fondo rojo para que parezca que el "botón simulado" se intensifica*/
@@ -30,10 +31,109 @@
             font-size: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        /* Atributos de la clase "capitulo" */
+        .capitulo {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-style: italic;
+            padding-left: 300px;
+            padding-right: 500px;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+            text-decoration: underline ;
+        }
     </style>
 </head>
 <body>
+    <!-- Botón simulado por texto con padding -->
     <p>Haga click en el siguiente botón</p>
     <a href="http://www.google.com.ar" target="_blank">Ir a google</a>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="indice">
+        <a href="#parrafo1">Ir a artículo Litio</a>
+        <a href="#parrafo2">Ir a artículo Gobierno</a>
+        <a href="#parrafo3">Ir a artículo IA</a>
+        <a href="#parrafo4">Ir a artículo SAN MARTIN</a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <h1>TEMARIO DE ELEMENTOS A REPASAR</h1>
+   <br>
+   <br>
+
+    <div id="parrafo1">
+        <h2>SOSPECHA SOBRE EL PRECIO DEL LITIO</h2>
+        <p class="capitulo">
+            El senador nacional Oscar Parrilli, del Frente de Todos, pidió la profundizacion de la política nacional 
+            con respecto a la producción y comercialización de litio, definiendo "un precio oficial y obligatorio" 
+            para el mineral y sus derivados. El pedido fue sugerido a través de una nota enviada a la Secretaría 
+            de Asuntos Estratégicos, que conduce Mercedes Marcó del Pont, en cuyo ámbito se creó la Mesa del Litio, 
+            espacio intersectorial con el propósito de trabajar en un plan de desarrollo de mediano y largo plazo para la actividad. 
+            "Compartimos también la preocupación expresada frente a la baja o prácticamente nula participación que están
+            teniendo las provincias en las ganancias extraordinarias obtenidas por las empresas, como consecuencia 
+            del elevado aumento del precio internacional del mineral", agrega la nota de Parrilli en su segundo párrafo.
+        </p>
+    </div>    
+    <br>
+    <br>
+    <a href="#indice">Volver al inicio</a>
+    <br>
+    <br>
+
+    <div id="parrafo2">
+        <h2>EL GOBIERNO</h2>
+        <p class="capitulo">
+            Puede haber información agregada, y en el mejor de los casos con detalles interesantes. Pero ocurren acerca de noticias ya conocidas por cualquiera que no viva en un frasco.
+            ¿Cuál es la novedad de un índice de pobreza aumentado, en la población económicamente activa, que alcanza a 18,1 millones de habitantes?
+            ¿Cuál es la novedad de que prácticamente se mantuvo e incluso bajó una décima la cifra de indigentes, respecto del segundo semestre del año pasado, gracias al asistencialismo estatal que tanto inconsciente quisiera borrar de un plumazo?
+            ¿Cuál es la novedad de que crece la economía y baja el desempleo mientras hay cada vez más pobres, de la mano de una aceleración inflacionaria casi descontrolada?
+        </p>
+    </div>
+    <br>
+    <br>
+    <a href="#indice">Volver al inicio</a>
+    <br>
+    <br>
+
+    <div id="parrafo3">
+        <h2>INTELIGENCIA ARTIFICIAL</h2>
+        <p class="capitulo">
+            Las criptomonedas, el metaverso y muchas de estas nuevas promesas parecen haber quedado en el cajón de los recuerdos. La tecnología avanza a un ritmo inusitado y en menos de cuatro meses la inteligencia artificial que aprende a hablar como los humanos se apoderó de la atención de los inversores de Wall Street, de los políticos y de los reguladores.
+            La idea de hacer futurología y plantear que estos modelos de lenguaje natural llegaron para cambiarlo todo tiene patas cortas. Pronosticar que en poco tiempo (algunos años) lograrán alcanzar una inteligencia equivalente a la humana para la mayoría de las tareas cognitivas parece imprudente.
+            Más imprudente todavía plantearlo en base al salto de valor y capitalización de las startups dedicadas a procesar lenguaje natural. Los mercados suelen hacer olas y espuma, las empresas que están en el lugar justo y en el momento indicado pueden valorizarse en forma exponencial, pero al final del camino son pocas las que realmente tienen algo diferente que ofrecer.
+            Sin embargo, vale la pena seguir de cerca qué dicen algunos intelectuales que hace tiempo estudian el tema de la inteligencia artificial y desarrollaron una lectura propia de las transformaciones que pueden ocurrir durante las próximas décadas en la forma en que se organizan las sociedades.
+        </p>
+    </div>
+    <br>
+    <br>
+    <a href="#indice">Volver al inicio</a>
+    <br>
+    <br>
+
+    <!-- A este párrafo se le inserta una imágen cuyo atributo float es "left" lo que hace
+    que la imagen se coloque a la izquierda del párrafo y el texto la rodeará-->
+    <div id="parrafo4">
+        <h2>SAN MARTIN DE TUCUMÁN</h2>
+        <p class="capitulo">
+            <img src="imagenes/sanmartin.jpg" style="width: 200px;height: 200px;float:left;" alt="Escudo del Santo">
+            Las criptomonedas, el metaverso y muchas de estas nuevas promesas parecen haber quedado en el cajón de los recuerdos. La tecnología avanza a un ritmo inusitado y en menos de cuatro meses la inteligencia artificial que aprende a hablar como los humanos se apoderó de la atención de los inversores de Wall Street, de los políticos y de los reguladores.
+            La idea de hacer futurología y plantear que estos modelos de lenguaje natural llegaron para cambiarlo todo tiene patas cortas. Pronosticar que en poco tiempo (algunos años) lograrán alcanzar una inteligencia equivalente a la humana para la mayoría de las tareas cognitivas parece imprudente.
+            Más imprudente todavía plantearlo en base al salto de valor y capitalización de las startups dedicadas a procesar lenguaje natural. Los mercados suelen hacer olas y espuma, las empresas que están en el lugar justo y en el momento indicado pueden valorizarse en forma exponencial, pero al final del camino son pocas las que realmente tienen algo diferente que ofrecer.
+            Sin embargo, vale la pena seguir de cerca qué dicen algunos intelectuales que hace tiempo estudian el tema de la inteligencia artificial y desarrollaron una lectura propia de las transformaciones que pueden ocurrir durante las próximas décadas en la forma en que se organizan las sociedades.
+        </p>
+    </div>
+    <br>
+    <br>
+    <a href="#indice">Volver al inicio</a>
+    <br>
+    <br>
+
 </body>
 </html>
