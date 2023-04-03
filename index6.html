@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,33 @@
         /* Este estilo se aplica sobre el párrafo identificado como 'poema' */
         #poema {
             color: white;
-            font-family:'Franklin Gothic Medium';
+            font-family: 'Franklin Gothic Medium';
             font-style: italic;
             text-align: center;
             padding-top: 40px;
             padding-bottom: 40px;
             background-image: url('imagenes/pasto.jpg');
-            background-repeat: no-repeat;    /* No repite la imágen si es más chica que el tamaño del poema*/
-            background-size: cover;          /* Cubre todo el elemento HTML (se estira la imágen para cubrir*/
-            background-attachment: fixed;    /* Estira proporcionalmente la imagen para que no se deforme*/
+            background-repeat: no-repeat;   /* No repite la imágen si es más chica que el tamaño del poema*/
+            background-size: cover;         /* Cubre todo el elemento HTML (se estira la imágen para cubrir*/
+            background-attachment: fixed;   /* Estira proporcionalmente la imagen para que no se deforme*/
+        }
+
+        /* Este estilo se aplica sobre el párrafo identificado como 'poema' */
+        #frase {
+            color:deeppink;
+            font-family: georgia;
+            font-style: italic;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-image: url('imagenes/pasto.jpg');
+            background-repeat: no-repeat;   /* No repite la imágen si es más chica que el tamaño del poema*/
+            background-size: 100% 100%;     /* La imagen se estira 100% a lo ancho y alto para cubrir el elemento*/ 
         }
     </style>
+
 </head>
+
 <body>
     <h1 style="font-family: 'Times New Roman', Times, serif;font-style: italic;text-align: center;">La higuera</h1>
     <br>
@@ -32,5 +48,19 @@
         yo le tengo piedad <br>
         a la higuera
     </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="frase">
+        Ojos que no ven <br>
+        corazón que <br>
+        no siente <br>
+        lo dice <br>
+        la gente <br>
+        y tiene razón
+    </p>
+
 </body>
+
 </html>
