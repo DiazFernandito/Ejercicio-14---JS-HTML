@@ -24,7 +24,7 @@
             font-family: monospace;             
             font-size: 15px;             
         }
-        /* color, fondo y fuente de los textos de loslink cuando 
+        /* color, fondo y fuente de los textos de los links cuando 
         el cursor pasa por ellos */
         a:hover {
             color:cornflowerblue;
@@ -45,9 +45,13 @@
     <br>
     <br>
     <p>Haga clic en el escudo del santo para ir al sitio oficial !!</p>
-    <a href="https://clubatleticosanmartin.com.ar/" target="_blank"><img src="imagenes/sanmartin.jpg" alt="Escudo Santo" style="width: 100px;height: 100px;"></a>
+    <!-- Imágen insertada dentro del hipervículo -->
+    <a href="https://clubatleticosanmartin.com.ar/" target="_blank">
+        <img src="imagenes/sanmartin.jpg" alt="Escudo Santo" style="width: 100px;height: 100px;">
+    </a>
     <br>
     <br>
+    <!-- Botón para ir a un enlace. Usa código JS dentro del evento onclick -->
     <button type="button" onclick="document.location='https://clubatleticosanmartin.com.ar/'">Clic para ir a CASM</button>
 
 </body>
