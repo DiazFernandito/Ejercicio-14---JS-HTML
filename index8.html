@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes sobre el cuerpo de un documento HTML</title>
+
+    <!-- Estilo del fondo de pantalla-->
+    <style>
+        body {
+            margin:0px ;
+            font-family: Verdana ;
+            font-size: 20px ;
+            color: blue ;
+        }
+        /* Imagen de fondo: se repite la imagen para cubrir el elemento */
+        #parrafo1 {
+            margin: 0px ;
+            padding : 10px ;
+            color: yellow;
+            background-image: url('imagenes/CtasCtes.png');
+        }
+        /* Imagen de fondo: no se repite la imagen. Mantiene su tamaño original. No cambia
+        de tamaño aunque el elemento si cambie su tamaño */
+        #parrafo2 {
+            margin: 0px ;
+            padding : 10px ;
+            color: red;
+            background-image: url('imagenes/CtasCtes2.png');
+            background-repeat: no-repeat;
+        }
+        /* Imagen de fondo: La imagen se estira proporcinalmente para cubrir el elemento
+        y se corta en el ancho o altura en los casos de que el tamaño del elemento sea menor */
+        #parrafo3 {
+            margin: 0px ;
+            padding : 10px ;
+            color: red;
+            background-image: url('imagenes/CtasCtes3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Imagen de fondo: La imagen se estira a lo ancho o alto en los casos de que el tamaño 
+        del elemento cambie. La imagen se deforma y pierde proporción */
+        #parrafo4 {
+            margin: 0px ;
+            padding : 10px ;
+            color: red;
+            background-image: url('imagenes/CtasCtes4.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        /* Imagen de fondo: La imagen mantiene su proporción para cubrir el elemento.
+        Permenece fija en pantalla y se recorta si hace falta*/
+        #parrafo5 {
+            margin: 0px ;
+            padding : 10px ;
+            color: red;
+            background-image: url('imagenes/CtasCtes4.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="parrafo1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>    
+    <br>
+    <br>
+    <p id="parrafo2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>
+    <br>
+    <br>
+    <p id="parrafo3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>
+    <br>
+    <br>
+    <p id="parrafo4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>
+    <br>
+    <br>
+    <p id="parrafo5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>
+    <br>
+    <br>
+    <p id="parrafo6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Incidunt quidem nulla quasi rerum facilis aliquid! Eius libero <br>
+        provident labore ipsa perspiciatis excepturi, quam dolorem <br>
+        itaque, sequi odio sed atque reiciendis.
+    </p>
+    <br>
+    <br>
+
+</body>
+</html>
