@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes sobre elementos HTML</title>
+
+    <style>
+        /* Este estilo se aplica sobre el párrafo identificado como 'poema' */
+        #poema {
+            color: white;
+            font-family:'Franklin Gothic Medium';
+            font-style: italic;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-image: url('imagenes/pasto.jpg');
+            background-repeat: no-repeat;    /* No repite la imágen si es más chica que el tamaño del poema*/
+            background-size: cover;          /* Cubre todo el elemento HTML (se estira la imágen para cubrir*/
+            background-attachment: fixed;    /* Estira proporcionalmente la imagen para que no se deforme*/
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif;font-style: italic;text-align: center;">La higuera</h1>
+    <br>
+    <br>
+    <p id="poema">
+        Porque es áspera y fea <br>
+        porque todas sus ramas son grises <br>
+        yo le tengo piedad <br>
+        a la higuera
+    </p>
+</body>
+</html>
