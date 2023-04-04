@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con tablas HTML (Estilos)</title>
+
+    <style>
+        /* Estilo solamente para el ancho de la tabla*/
+        table {
+            width: 100%;                    /* Ocupa el 100% del ancho del documento (se estiran la columnas) */
+            font-family: monospace ;
+            font-size: 15px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            padding: 20px;
+            text-align: center;
+        }
+        tr {
+            border-bottom: 2px solid black;         /* borde horizontal debajo de cada fila */
+        }
+        tr:hover {
+            background-color: aqua;                 /* color de la fila al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos de clientes</h1>
+
+    <!-- Definición de la Tabla-->
+    <table>
+        <!-- Titulo de la tabla-->        
+        <caption>Estado de clientes</caption>
+        <!-- Cabecera de Tabla -->
+        <tr>
+            <th>Apellido y nombre</th>       <!-- Borde alrededor de cada dato/celda-->
+            <th>Teléfono</th>
+            <th>Estado</th>
+        </tr>
+        <!-- Fila 1-->
+        <tr>
+            <td>DIAZ, Fernando Alfredo</td>
+            <td>381 5802796</td>
+            <td>Al día</td>
+        </tr>
+        <!-- Fila 2-->
+        <tr>
+            <td>PERO, Susana</td>
+            <td>381 8888123</td>
+            <td>Moroso</td>
+        </tr>
+        <!-- Fila 3-->
+        <tr>
+            <td>CHAVARRIA, Rodrigo</td>
+            <td>381 6352356</td>
+            <td>En judiciales</td>
+        </tr>
+    </table>
+</body>
+</html>

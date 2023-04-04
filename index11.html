@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con tablas HTML (Estilos)</title>
+
+    <style>
+        /* Estilo para el cuerpo del documento */
+        body {
+            margin: 0px;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        /* Estilo para los elementos de la tabla*/
+        table, tr, td, th {
+            font-family: monospace;
+            font-size: 15px;                /* Fuente */
+            text-align: center;             /* Alineación centro de todos los elementos de la tabla */
+            border: 2px solid black ;      /* borde */
+            /* border-collapse: collapse;    borde de línea simple (Anula border-radius) */
+            background-color: aqua;      /* color de fondo de todos los elementos de la tabla */
+        }
+        /* Estilo solamente para el ancho de la tabla*/
+        table {
+            width: 100%;                    /* Ocupa el 100% del ancho del documento (se estiran la columnas) */
+        }
+        /* Estilos solamente para estos elementos */
+        table, th, td {
+            border-radius: 20px;            /* Borde redondeados alrededor de estos elementos (no funciona con border-colapse*/
+            border-style: dotted;           /* Borde con linea de puntos*/
+            border-color: red;            /* Color del borde */
+        }
+        th {
+            height: 35px;                   /* Altura de este elemento, th -> Cabeceras de columnas */
+        }
+        th, td {
+            padding: 20px;                  /* padding de estos elementos (celdas: Cabeceras y Datos)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos de clientes</h1>
+
+    <!-- Definición de la Tabla-->
+    <table>
+        <!-- Titulo de la tabla-->        
+        <caption>Estado de clientes</caption>
+        <!-- Cabecera de Tabla -->
+        <tr>
+            <th>Apellido y nombre</th>       <!-- Borde alrededor de cada dato/celda-->
+            <th>Teléfono</th>
+            <th>Estado</th>
+        </tr>
+        <!-- Fila 1-->
+        <tr>
+            <td>DIAZ, Fernando Alfredo</td>
+            <td>381 5802796</td>
+            <td>Al día</td>
+        </tr>
+        <!-- Fila 2-->
+        <tr>
+            <td>PERO, Susana</td>
+            <td>381 8888123</td>
+            <td>Moroso</td>
+        </tr>
+        <!-- Fila 3-->
+        <tr>
+            <td>CHAVARRIA, Rodrigo</td>
+            <td>381 6352356</td>
+            <td>En judiciales</td>
+        </tr>
+    </table>
+</body>
+</html>
