@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set de imágenes en HTML</title>
+
+    <style>
+        body {
+            margin: 0px ;
+            background-color:burlywood ;
+            color:blue ;
+            font-family: Tahoma;
+        }
+    </style>
+</head>
+
+    <h1 style="text-align: center; text-decoration: underline;">Se muestran imágenes a continuación</h1>
+
+    <!-- Set de imágenes:
+        Desde 1280px mostrar pasto.jpg
+        Desde 700px y hasta 1279px mostrar CtasCtes.png
+        Desde 300px y hasta 699px mostrar sanmartin.jpg 
+    -->
+    <picture>
+        <source media="(min-width: 1280px)" srcset="imagenes/pasto.jpg">
+        <source media="(min-width: 700px)" srcset="imagenes/CtasCtes.png">
+        <source media="(min-width: 300px)" srcset="imagenes/sanmartin.jpg">
+        <img src="imagenes/pasto.jpg" alt="Imagen de pasto" style="width: auto;">
+    </picture>
+
+<body>
+    
+</body>
+</html>
