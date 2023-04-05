@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+
+    <!-- Estilos para la lista-->>
+    <style>
+
+        ul {
+            list-style-type: none;          /* sin punto de item al inicio */
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: blue;
+
+        }
+
+        li {
+            float:left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 15px;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: aqua;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h2>Barra de Navegación</h2>
+    <p>Seleccione una opción</p>
+
+    <!-- Definimos los elementos de la navbar como una lista desordenada -->
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contáctenos</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+    </ul>
+</body>
+</html>
