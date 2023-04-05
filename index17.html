@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando iframes</title>
+
+    <!-- Estilos -->
+    <style>
+        body {
+            margin: 0px;
+            background-color: darkgray;
+            color:blue ;
+            font-family: Tahoma;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esta es una lista horizontal</h1>
+    <h2>Los elementos de la lista se diponen uno a la par del otro</h2>
+    <p>
+        El resultado es similar a una barra de navegación. Se insertaron enlaces dentro de cada elemento de la lista.
+    </p>
+    <ul style="list-style-type: none; margin: 0px; padding: 0px; overflow: hidden; background-color: brown;">
+        <li style="float: left; color: white; text-align: center; padding: 15px;">
+            <a href="http://minutouno.com.ar/" target="ventana" style="background-color: brown; color: white; text-decoration: none;">Minuto1</a>
+        </li>
+        <li style="float: left; color: white; text-align: center; padding: 15px;">
+            <a href="https://www.diarioregistrado.com/" target="ventana" style="background-color: brown; color: white; text-decoration: none;">DiarioRegistrado</a>
+        </li>
+        <li style="float: left; color: white; text-align: center; padding: 15px;">
+            <a href="https://www.pagina12.com.ar" target="ventana" style="background-color: brown; color: white; text-decoration: none;">Página/12</a>
+        </li>
+        <li style="float: left; color: white; text-align: center; padding: 15px;">
+            <a href="https://www.eltucumano.com/" target="ventana" style="background-color: brown; color: white; text-decoration: none;">El Tucumano</a>
+        </li>
+    </ul>
+
+    <!-- Este es el iframe -->
+    <iframe src="" title="iframe" name="ventana" style="width: 100%; height: 400px; border: none;"></iframe>
+</body>
+</html>
