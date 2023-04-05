@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando clases de estilos para elementos HTML</title>
+
+    <!-- Estilos para las clases .ciudad y .principal -->
+    <style>
+        .ciudad {
+          background-color: tomato;
+          color: white;
+          padding: 10px;
+        } 
+        
+        .principal {
+          text-align: center;
+        }
+        </style>
+        
+</head>
+<body>
+
+    <h2>Multiple Clases</h2>
+    <p>Hay 3 elementos referenciando a la clase "ciudad". Además, Londres referencia a la clase "principal", que es para centrar textos.</p>
+    
+    <h2 class="ciudad principal">Londres</h2>       <!-- Londres está basado en la clase .ciudad y .principal-->
+    <h2 class="ciudad">Paris</h2>                   <!-- Paris está basado en .ciudad -->
+    <h2 class="ciudad">Tokio</h2>                   <!-- Tokio está basado en .ciudad -->
+        
+</body>
+</html>
+
+
