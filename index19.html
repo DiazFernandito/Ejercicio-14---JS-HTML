@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Reponsivo</title>
+
+    <style>
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+
+        /* Usando media query */
+        @media screen and (max-width: 581px) {
+            .izquierdo {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+                background-color: black;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Notas:
+    (*) "float: left;" -> El box del elemento html adapta su contenido al ancho que ocupa y se pega al margen
+    izquierdo del viewport. El elemento siguiente se pega al anterior para completar la columna
+    (*) "width: 25%;" -> el ancho del elemento es de 25% del ancho del viewport
+    (*) "box-size: border-box;" -> determina el comportamiento del ancho/altura de un elemento
+    -->
+    
+    <div class="izquierdo" style="background-color: cornflowerblue; color: white; padding: 20px; float: left; width: 25%; box-sizing: border-box;">
+        <p>
+            Contenido Izquierdo
+        </p>
+    </div>  
+
+    <p id="principal" style="background-color: burlywood; color: white; padding: 20px; float: left; width: 50%; box-sizing: border-box;">
+        Contenido Principal
+    </p>
+      
+    <p id="derecho" style="background-color: aquamarine; color: white; padding: 20px; float: left; width: 25%; box-sizing: border-box;">
+        Contenido Derecho
+    </p>
+      
+
+</body>
+</html>
