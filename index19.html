@@ -13,11 +13,68 @@
             font-size: 10px;
         }
 
+        .izquierdo {
+            background-color: cornflowerblue; 
+            color: white; 
+            font-size: 10px;
+            padding: 20px; 
+            float: left; 
+            width: 20%;
+            box-sizing: border-box;            
+        }
+
+        .derecho {
+            background-color: burlywood; 
+            color: white; 
+            font-size: 10px;
+            padding: 20px; 
+            float: left; 
+            width: 60%;
+            box-sizing: border-box;
+        }
+
+        .principal {
+            background-color: aquamarine; 
+            color: white; 
+            font-size: 10px;
+            padding: 20px; 
+            float: left; 
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        #miParrafo {
+            background-color: blueviolet; 
+            color: wheat; 
+            font-style: italic; 
+            font-size: 15px;
+        }
+
         /* Usando media query */
-        @media screen and (max-width: 581px) {
-            .izquierdo {
-                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-                background-color: black;
+        @media screen and (max-width: 600px) {
+            .izquierdo, .derecho, .principal {
+                width: 100%; /* El ancho de cada elemento será del 100% mientras el ancho del viewport sea menor o igual a 600px*/
+                font-size: 35px;
+            }
+        }
+        @media screen and (min-width: 601px) {
+            .izquierdo, .derecho, .principal {
+                font-size: 5px;
+            }
+        }
+        @media screen and (min-width: 792px) {
+            .izquierdo, .derecho, .principal {
+                font-size: 11px;
+            }
+        }
+        @media screen and (min-width: 1300px) {
+            .izquierdo, .derecho, .principal {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #miParrafo {
+                font-size: 35px;
             }
         }
 
@@ -34,19 +91,27 @@
     (*) "box-size: border-box;" -> determina el comportamiento del ancho/altura de un elemento
     -->
     
-    <div class="izquierdo" style="background-color: cornflowerblue; color: white; padding: 20px; float: left; width: 25%; box-sizing: border-box;">
-        <p>
-            Contenido Izquierdo
-        </p>
+    <div class="izquierdo">
+        <p>Contenido izquiero</p>
     </div>  
 
-    <p id="principal" style="background-color: burlywood; color: white; padding: 20px; float: left; width: 50%; box-sizing: border-box;">
-        Contenido Principal
-    </p>
+    <div class="principal">
+        <p>Contenido principal</p>
+    </div>
       
-    <p id="derecho" style="background-color: aquamarine; color: white; padding: 20px; float: left; width: 25%; box-sizing: border-box;">
-        Contenido Derecho
-    </p>
+    <div class="derecho">
+        <p>Contenido Derecho</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <p id="miParrafo">
+            El ejercicio permite visualizar el comportamiento de tres elementos que conformarían
+            una barra de navegación y su capacidad responsiva.
+        </p>
+    </div>
       
 
 </body>
