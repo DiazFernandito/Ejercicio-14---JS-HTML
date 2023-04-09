@@ -4,51 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinturerías El Colibrí</title>
+    <title>Colibri Pinturas</title>
 
     <!-- Referencia a Estilos CSS (w3Schools) -->
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/w3-theme-black.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/w3-theme-purple.css">
 
 </head>
 
-<body id="myPage">
+<body id="miPagina">
 
     
     <!-- Navbar -->
     <div class="w3-top">
-
         <div class="w3-bar w3-theme-d2 w3-left-align">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Marcas</a>
-            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Productos</a>
-            <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Ofertas</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacto</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Búsqueda">
-                <i class="fa fa-search"></i>
+            <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white">
+                <img src="imagenes/house-16.ico" alt="Home">
             </a>
+            <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Contacto</a>
+            <a href="#ofertas"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Ofertas</a>
+            <a href="#locales"  class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Locales</a>
+            <a href="#marcas"   class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Marcas</a>
         </div>
-    
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#team" class="w3-bar-item w3-button">Marcas</a>
-            <a href="#work" class="w3-bar-item w3-button">Productos</a>
-            <a href="#pricing" class="w3-bar-item w3-button">Ofertas</a>
-            <a href="#contact" class="w3-bar-item w3-button">contacto</a>
-            <a href="#" class="w3-bar-item w3-button">Búsqueda</a>
-        </div>
-
     </div>
     
-    <!-- Image Header -->
+    <!-- Imágen de cabecera -->
     <div class="w3-display-container w3-animate-opacity">
-        <img src="imagenes/colibri03.jpg" alt="Logo de El Colibrí" style="width:100%;min-height:350px;max-height:600px;">
+        <img src="imagenes/colibri-wall.jpg" alt="Logo de El Colibrí" style="width:100%;height:100%;opacity: 100%;">
     </div>
     
-    <!-- Team Container -->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
+    <!-- Marcas -->
+    <div class="w3-container w3-padding-64 w3-center" id="marcas">
+
         <h2>MARCAS</h2>
         <p>Trabajamos con las marcas más prestigiosas</p>
         
@@ -73,207 +61,205 @@
                 <img src="imagenes/tersuave.jpg" alt="Tersuave" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>Tersuave</h3>
             </div>
-            
+
+            <div class="w3-quarter">
+                <img src="imagenes/plavicon1.jpg" alt="Plavicon" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Tersuave</h3>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="imagenes/sinteplast1.jpg" alt="Sinteplast" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Tersuave</h3>
+            </div>
+
         </div>
     </div>
 
-    <!-- Work Row -->
-    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+    <!-- Locales -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l2" id="locales">
     
-    <div class="w3-quarter">
-    <h2>Our Work</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="w3-quarter">
+            <h2>Nuestros Locales</h2>
+            <p>
+                Contamos con tres sucursales en puntos estratégicos de la ciudad
+                con la variedad más amplia de productos del mercado y con los profesionales
+                que le brindarán una atención de primera.
+            </p>
+        </div>
+    
+        <!-- Local Centro -->
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="imagenes/centro.jpg" alt="Centro" style="width: 100%; height: 229px;">
+                <div class="w3-container">
+                    <h3>Sucursal Centro</h3>
+                    <h4 style="color:blueviolet;">San Martin 150</h4>
+                    <p>Teléfonos</p>
+                    <p>381 5888 999</p>
+                    <p>381 3589 235</p>
+                    <p>centro@colibri.com.ar</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Local Norte -->
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="imagenes/norte.jpg" alt="Norte" style="width:100%; height: 229px;">
+                <div class="w3-container">
+                    <h3>Sucursal Norte</h3>
+                    <h4 style="color:blueviolet;">Av. Norte 2650</h4>
+                    <p>Teléfonos</p>
+                    <p>381 6123 456</p>
+                    <p>381 5123 456</p>
+                    <p>norte@colibri.com.ar</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Local Sur -->
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="imagenes/sur.jpg" alt="Sur" style="width:100%; height: 229px;">
+                <div class="w3-container">
+                    <h3>Sucursal Sur</h3>
+                    <h4 style="color:blueviolet;">Gral. Gutierrez 35</h4>
+                    <p>Teléfonos</p>
+                    <p>381 7 9874 123</p>
+                    <p>381 6 8899 357</p>
+                    <p>sur@colibri.com.ar</p>
+                </div>
+            </div>
+        </div>
+    
     </div>
     
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-        <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-        <div class="w3-container">
-        <h3>Customer 1</h3>
-        <h4>Trade</h4>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        </div>
-        </div>
-    </div>
-    
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-        <div class="w3-container">
-        <h3>Customer 2</h3>
-        <h4>Trade</h4>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        </div>
-        </div>
-    </div>
-    
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-        <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-        <div class="w3-container">
-        <h3>Customer 3</h3>
-        <h4>Trade</h4>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        <p>Blablabla</p>
-        </div>
-        </div>
-    </div>
-    
-    </div>
-    
-    <!-- Container -->
-    <div class="w3-container" style="position:relative">
-        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-        style="position:absolute;top:-28px;right:24px">+</a>
-    </div>
-    
-    <!-- Pricing Row -->
-    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-        <h2>PRICING</h2>
-        <p>Choose a pricing plan that fits your needs.</p><br>
+    <!-- Ofertas -->
+    <div class="w3-row-padding w3-center w3-padding-64" id="ofertas">
+        <h2>NUESTRAS OFERTAS</h2>
+        <p>Le ofrecemos estos increíbles precios !</p><br>
+
+        <!-- Oferta Alba -->
         <div class="w3-third w3-margin-bottom">
             <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme">
-                <p class="w3-xlarge">Basic</p>
-            </li>
-            <li class="w3-padding-16"><b>10GB</b> Storage</li>
-            <li class="w3-padding-16"><b>10</b> Emails</li>
-            <li class="w3-padding-16"><b>10</b> Domains</li>
-            <li class="w3-padding-16"><b>Endless</b> Support</li>
-            <li class="w3-padding-16">
-                <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-                <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-            </li>
+                <li class="w3-theme">
+                    <p class="w3-xlarge">Alba</p>
+                </li>
+                <li class="w3-padding-16"><b>Albacryl</b></li>
+                <li class="w3-padding-16">Rinde más</li>
+                <li class="w3-padding-16">Interiores</li>
+                <li class="w3-padding-16"><b>1 LT</b></li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 8.500.-</h2>
+                    <span class="w3-opacity">Contado/Efectivo</span>
+                </li>
+                <li>
+                    <img src="imagenes/alba1.png" alt="Alba1" style="width: 200px; height: 200px;">
+                </li>
             </ul>
         </div>
     
+        <!-- Oferta Sherwin Williams -->
         <div class="w3-third w3-margin-bottom">
             <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme-l2">
-                <p class="w3-xlarge">Pro</p>
-            </li>
-            <li class="w3-padding-16"><b>25GB</b> Storage</li>
-            <li class="w3-padding-16"><b>25</b> Emails</li>
-            <li class="w3-padding-16"><b>25</b> Domains</li>
-            <li class="w3-padding-16"><b>Endless</b> Support</li>
-            <li class="w3-padding-16">
-                <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-                <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-            </li>
+                <li class="w3-theme-l2">
+                    <p class="w3-xlarge">Sherwin Williams</p>
+                </li>
+                <li class="w3-padding-16"><b>Loxon</b></li>
+                <li class="w3-padding-16">Larga Duración</li>
+                <li class="w3-padding-16">Exteriores</li>
+                <li class="w3-padding-16"><b>1.5 LT</b></li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 12.499.-</h2>
+                    <span class="w3-opacity">Contado/Efectivo</span>
+                </li>
+                <li>
+                    <img src="imagenes/Loxon1.jpg" alt="Sherwin" style="width: 200px; height: 200px;">
+                </li>
             </ul>
         </div>
     
+        <!-- Oferta Tersuave -->
         <div class="w3-third w3-margin-bottom">
             <ul class="w3-ul w3-border w3-hover-shadow">
-            <li class="w3-theme">
-                <p class="w3-xlarge">Premium</p>
-            </li>
-            <li class="w3-padding-16"><b>50GB</b> Storage</li>
-            <li class="w3-padding-16"><b>50</b> Emails</li>
-            <li class="w3-padding-16"><b>50</b> Domains</li>
-            <li class="w3-padding-16"><b>Endless</b> Support</li>
-            <li class="w3-padding-16">
-                <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-                <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-                <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-            </li>
+                <li class="w3-theme">
+                    <p class="w3-xlarge">Tersuave</p>
+                </li>
+                <li class="w3-padding-16"><b>Terplast</b></li>
+                <li class="w3-padding-16">Revoque Plástico</li>
+                <li class="w3-padding-16">Interior/Exterior</li>
+                <li class="w3-padding-16"><b>5 KG</b></li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide">$ 22.000.-</h2>
+                    <span class="w3-opacity">Contado/Efectivo</span>
+                </li>
+                <li>
+                    <img src="imagenes/Tersuave1.jpg" alt="Tersuave" style="width: 200px; height: 200px;">
+                </li>
             </ul>
         </div>
     </div>
     
-    <!-- Contact Container -->
-    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <!-- Contacto -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contacto">
+
         <div class="w3-row">
-        <div class="w3-col m5">
-        <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-            <h3>Address</h3>
-            <p>Swing by for a cup of coffee, or whatever.</p>
-            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Chicago, US</p>
-            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+00 1515151515</p>
-            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;test@test.com</p>
-        </div>
-        <div class="w3-col m7">
-            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-            <div class="w3-section">      
-            <label>Name</label>
-            <input class="w3-input" type="text" name="Name" required>
+
+            <!-- Datos de contacto -->
+            <div class="w3-col m5">
+                <div class="w3-padding-16">
+                    <span class="w3-xlarge w3-border-deep-purple w3-bottombar">Contáctenos</span>
+                </div>
+                <p>Su consulta no nos molesta !</p>
+                <p><img src="imagenes/map-marker-2-24.ico">&nbsp;&nbsp;San Martin 150, Narnia</p>
+                <p><img src="imagenes/phone-24.ico">&nbsp;&nbsp;381 5888 999</p>
+                <p><img src="imagenes/whatsapp-24.ico">&nbsp;&nbsp;381 5888 999</p>
+                <p><img src="imagenes/email-12-24.ico">&nbsp;&nbsp;atclientes@colibri.com.ar</p>
             </div>
-            <div class="w3-section">      
-            <label>Email</label>
-            <input class="w3-input" type="text" name="Email" required>
+
+            <!-- Formulario de contacto -->
+            <div class="w3-col m7">
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white" target="_blank">
+                    <div class="w3-section">      
+                        <label>Nombre</label>
+                        <input class="w3-input" type="text" name="Nombre" required>
+                    </div>
+                    <div class="w3-section">      
+                        <label>Correo electrónico</label>
+                        <input class="w3-input" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">      
+                        <label>Mensaje</label>
+                        <input class="w3-input" type="text" name="Mensaje" required>
+                    </div>  
+                    <button type="button" class="w3-button w3-right w3-theme">Enviar</button>
+                </form>
             </div>
-            <div class="w3-section">      
-            <label>Message</label>
-            <input class="w3-input" type="text" name="Message" required>
-            </div>  
-            <input class="w3-check" type="checkbox" checked name="Like">
-            <label>I Like it!</label>
-            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-            </form>
+
         </div>
-        </div>
+
     </div>
     
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-    
+    <!-- Navbar -->
+    <div class="w3-bottombar w3-white">
+        <div class="w3-bar w3-white w3-left-align">
+            <a href="#" class="w3-bar-item w3-button w3-hover-white w3-white w3-right">
+                <img src="imagenes/house-16.ico" alt="Home">
+            </a>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-        <h4>Follow Us</h4>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-        <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-        <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    
-        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-        <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-        <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-        <i class="fa fa-chevron-circle-up"></i></span></a>
-        </div>
+        <h4>Síganos</h4>
+        <a class="w3-button w3-large w3-white" href="javascript:void(0)" title="Facebook"><img src="imagenes/facebook-3-24.ico"></a>
+        <a class="w3-button w3-large w3-white" href="javascript:void(0)" title="Twitter"><img src="imagenes/twitter-3-24.ico"></a>
+        <a class="w3-button w3-large w3-white" href="javascript:void(0)" title="Instragram"><img src="imagenes/instagram-24.ico"></a>
+        <a class="w3-button w3-large w3-white" href="javascript:void(0)" title="Linkedin"><img src="imagenes/linkedin-6-24.ico"></a>
+        <p>Powered by 
+            <a href="#">Grupo 7 - Comisión 184</a>
+        </p>
     </footer>
     
-    <script>
-    // Script for side navigation
-    function w3_open() {
-        var x = document.getElementById("mySidebar");
-        x.style.width = "300px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-    }
-    
-    // Close side navigation
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-    
-    // Used to toggle the menu on smaller screens when clicking on the menu button
-    function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        } else { 
-        x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    </script>
-        
 </body>
 </html>
