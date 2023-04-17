@@ -1,5 +1,182 @@
 
-#contacto {
-    padding-top: 20px; 
-    font-size: 18px;            
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu:wght@500&family=Urbanist:wght@500&display=swap');
+
+/* Clase contenedora de tarjetas de locales */
+.claseLocal {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+}
+
+.claseLocal h5 {
+    color: blueviolet;
+}
+.claseLocal a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+/* Clase contenedora de tarjetas de locales */
+.claseServ {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+}
+.claseServ h5 {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+/* Clase contenedora de tarjetas de Ofertas */
+.claseOfer {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.claseOfer h2 {
+    color: yellow;
+}
+
+/* Clase contenedora de tarjetas de Marcas */
+.claseMarc {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.claseMarc h2 {
+    color: yellow;
+}
+.claseMarc p {
+    margin-bottom: 60px;
+}
+
+/* Clase contenedora de tarjetas de Marcas */
+.clasePie {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blueviolet;
+    color: white;
+}
+.clasePie a {
+    color: yellow;
+}
+.clasePie p {
+    color: yellow;
+}
+.clasePie h4 {
+    color: yellow;
+}
+
+/* Clase contenedora de formulario de contrato */
+.claseConta {
+    background-color: rgb(249, 249, 147);
+}
+
+/* Estilos personalizados para los Item de la Navbar*/
+.miItem {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos personalizados para los textos del los elementos del carrusel */
+.carousel-caption h5 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
+}
+.carousel-caption p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+/* Media query para el comportamiento de la altura del carrousel */
+@media screen and (min-width: 1280px){
+    .carousel-item {
+        height: 100vh;
+    }
+}
+
+/* Personalización del Pie de Página */
+.clasePie {
+    padding-left: 200px;
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:yellow;
+}
+.clasePie h4 {
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.clasePie p {
+    margin-bottom: 5px;
+}
+.clasePie a {
+    color:white;
+    text-decoration: none;
+}
+.clasePie li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* Personalización del Botón Acordeón de Quiénes somos */
+.claseAcor {
+    margin-right: 140px;
+}
+.accordion {
+    --bs-accordion-color: yellow;
+    --bs-accordion-bg: blueviolet;
+    --bs-accordion-btn-color: yellow;
+    --bs-accordion-btn-bg: blueviolet;
+    --bs-accordion-active-bg: blueviolet;
+    --bs-accordion-btn-active-color: yellow;
+    --bs-accordion-btn-focus-border-color: blueviolet;
+    --bs-accordion-btn-focus-box-shadow: blueviolet;
+    --bs-accordion-active-color: yellow;
+    --bs-accordion-active-bg: blueviolet;
+}  
+.accordion-button {
+    padding-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.accordion-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/* Personalización del Powered by */
+.clasePower h4 {
+    margin-top: 40px;
+    padding-bottom: 0px;
+}
+.clasePower a {
+    text-decoration: underline;
 }
