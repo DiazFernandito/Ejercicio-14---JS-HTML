@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación PDF</title>
+
+    <!-- Librearía jsPDF 
+    <script src="jspdf/dist/jspdf.umd.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>    
+
+    <!-- Función para imprimir PDF -->
+    <script>
+        import { jsPDF } from "./jspdf";
+
+        function imprimirPDF() {
+
+            /* Variable con el nombre del cliente*/
+            let nombre = document.getElementById("nombreCliente").innerHTML ;
+            nombre = nombre.toUpperCase() ;
+
+            /* Objeto heredado doc */
+            const doc = new jsPDF() ;
+
+            /* Compone el cupón */
+            doc.setFont("times", "bold", 20, 40) ;
+            doc.text("! FELICITACIONES !") ;
+            doc.setFont("helvetica", "bold", 20, 50) ;
+            doc.text(nombre)
+            doc.text("Te ganaste un cupón de 10% de descuento en todas tus compras !!") ;
+            doc.save("cupon.pdf") ;
+            return ;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>GENERACIÓN DE PDF</h1>
+    <p id="nombreCliente">Fernando Alfredo Diaz</p>
+    <button type="button" onclick="imprimirPDF();">Suscribite</button>
+</body>
+</html>
